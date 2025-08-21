@@ -1,7 +1,6 @@
 import { useState, useMemo } from 'react';
 import { motion, type Variants } from 'framer-motion';
 
-// Props Interfaces
 export interface Column<T> {
   key: string;
   title: string;

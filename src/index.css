@@ -4,19 +4,14 @@
 
 @layer base {
   :root {
-    /* Base Colors for UI Elements */
-    --color-surface: #ffffff; /* Component background */
-    --color-border: #e2e8f0;   /* Light border */
-    
-    /* Text & Accent Colors */
-    --color-text-primary: #1e293b; /* Dark text */
-    --color-text-secondary: #475569; /* Muted text */
-    --color-accent-blue: #3b82f6;   /* For accents like borders */
-
-    /* Gradient Colors */
-    --color-gradient-teal: #103f31;      /* Teal */
-    --color-gradient-charcoal: #2c2f33;  /* Charcoal */
-    --color-gradient-aqua: #1d4e4e;      /* Aqua */
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
+    --color-text-primary: #1e293b;
+    --color-text-secondary: #475569;
+    --color-accent-blue: #3b82f6;
+    --color-gradient-teal: #103f31;
+    --color-gradient-charcoal: #2c2f33;
+    --color-gradient-aqua: #1d4e4e;
     --color-gradient-purple: #6f42c1;
     --color-gradient-pink: #e83e8c;
   }
@@ -24,7 +19,6 @@
 
 body {
   @apply font-sans;
-  /* Gradient background with teal, charcoal, aqua, purple, pink */
   background: linear-gradient(
     45deg,
     var(--color-gradient-teal),
@@ -68,7 +62,6 @@ body {
   animation-delay: 0.2s;
 }
 
-/* Updated Tailwind-like classes based on new variables */
 .text-primary {
   color: var(--color-text-primary);
 }

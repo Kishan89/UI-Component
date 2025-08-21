@@ -46,7 +46,6 @@ function App() {
         </p>
       </header>
 
-      {/* InputField Section */}
       <section className="bg-[var(--color-surface)]/10 p-8 rounded-3xl shadow-2xl border border-[var(--color-border)] animate-fade-in-up">
         <h2 className="text-3xl font-bold mb-8 border-b-2 border-[var(--color-accent-blue)] pb-2 text-white">
           1. InputField Component 🎯
@@ -113,7 +112,7 @@ function App() {
         </div>
       </section>
 
-      {/* DataTable Section */}
+
       <section className="bg-[var(--color-surface)]/10 p-8 rounded-3xl shadow-2xl border border-[var(--color-border)] animate-fade-in-up delay-200">
         <h2 className="text-3xl font-bold mb-8 border-b-2 border-[var(--color-accent-blue)] pb-2 text-white">
           2. DataTable Component 📊

@@ -1,8 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import DataTable from './DataTable';
 import type { Column } from './DataTable';
-
-// Mock data for the table
 interface User {
   id: number;
   name: string;
