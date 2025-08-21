@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base Colors for UI Elements */
+    --color-surface: #ffffff; /* Component background */
+    --color-border: #e2e8f0;   /* Light border */
+    
+    /* Text & Accent Colors */
+    --color-text-primary: #1e293b; /* Dark text */
+    --color-text-secondary: #475569; /* Muted text */
+    --color-accent-blue: #3b82f6;   /* For accents like borders */
+
+    /* Gradient Colors */
+    --color-gradient-teal: #103f31;      /* Teal */
+    --color-gradient-charcoal: #2c2f33;  /* Charcoal */
+    --color-gradient-aqua: #1d4e4e;      /* Aqua */
+    --color-gradient-purple: #6f42c1;
+    --color-gradient-pink: #e83e8c;
+  }
+}
+
+body {
+  @apply font-sans;
+  /* Gradient background with teal, charcoal, aqua, purple, pink */
+  background: linear-gradient(
+    45deg,
+    var(--color-gradient-teal),
+    var(--color-gradient-charcoal),
+    var(--color-gradient-aqua),
+    var(--color-gradient-purple),
+    var(--color-gradient-pink)
+  );
+  background-size: 400% 400%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Updated Tailwind-like classes based on new variables */
+.text-primary {
+  color: var(--color-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-text-secondary);
+}
+
+.border-accent {
+  border-color: var(--color-accent-blue);
+}
+
+.bg-surface {
+  background: var(--color-surface);
+}
+
+.border-surface {
+  border-color: var(--color-border);
+}
